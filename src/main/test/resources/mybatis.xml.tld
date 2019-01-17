@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="testTables" targetRuntime="MyBatis3">
+        <commentGenerator>
+            <property name="suppressAllComments" value="true"></property>
+        </commentGenerator>
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/ResearchteamManagementsystem?useUnicode=true&amp;characterEncoding=utf8"
+                        userId="root"
+                        password="ysu2019">
+        </jdbcConnection>
+        <javaModelGenerator targetPackage="org.ysu.ylj.pojo"
+                            targetProject="C:\Users\yanglijun\IdeaProjects\ResearchTeamManagementSystem\src\main\java">
+            <property name="enableSubPackages" value="false"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+        <sqlMapGenerator targetPackage="org.ysu.ylj.dao"
+                         targetProject="C:\Users\yanglijun\IdeaProjects\ResearchTeamManagementSystem\src\main\resource">
+            <property name="enableSubPackages" value="false"></property>
+        </sqlMapGenerator>
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="org.ysu.ylj.dao"
+                             targetProject="C:\Users\yanglijun\IdeaProjects\labManagerPlatform\src\main\java">
+            <property name="enableSubPackages" value="false"></property>
+        </javaClientGenerator>
+
+        <table tableName="table1"></table>
+    </context>
+</generatorConfiguration>
