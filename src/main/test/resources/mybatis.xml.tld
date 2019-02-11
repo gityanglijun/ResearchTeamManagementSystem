@@ -8,9 +8,9 @@
             <property name="suppressAllComments" value="true"></property>
         </commentGenerator>
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://119.23.76.9:3306/researchteammanagementsystem?useUnicode=true&amp;characterEncoding=utf8"
+                        connectionURL="jdbc:mysql://localhost:3306/researchteammanagementsystem?useUnicode=true&amp;characterEncoding=utf8"
                         userId="root"
-                        password="mysql123">
+                        password="ysu2019">
         </jdbcConnection>
         <javaModelGenerator targetPackage="org.ysu.ylj.pojo"
                             targetProject="C:\Users\yanglijun\IdeaProjects\ResearchTeamManagementSystem\src\main\java">

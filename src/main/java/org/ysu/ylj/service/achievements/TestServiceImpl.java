@@ -13,11 +13,11 @@ import java.util.List;
 public class TestServiceImpl implements ITestService {
     @Resource
     Table1Mapper table1Mapper;
-
    @Override
     public List<Table1> getTables() {
-        Table1Example table1Example=new Table1Example();
-        List<Table1> lists=table1Mapper.selectByExample(table1Example);
-        return lists;
+       Table1Example table1Example=new Table1Example();
+       table1Example.createCriteria().andIdIsNotNull();
+       List<Table1> table1s=table1Mapper.selectByExample(table1Example);
+       return table1s;
     }
 }
